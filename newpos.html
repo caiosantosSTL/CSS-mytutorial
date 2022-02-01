@@ -1,0 +1,33 @@
+<div class="cont">
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+</div>
+
+<style>
+    .cont {
+        border: 1px solid blue;
+        height: 400px;
+        width: 400px;
+        padding: 15px;
+        position: relative;
+    }
+
+    .box1 {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+        position: relative; /*quando relativo*/
+        z-index: 1; /* quando 1, box rubro fica sobre o azul*/
+    }
+
+    .box2 {
+        background-color: blue;
+        height: 40px;
+        width: 40px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+</style>
